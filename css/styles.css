@@ -11,35 +11,61 @@ body {
 }
 
 /* Button styles */
-.cta-button {
-    background-color: #14B8A6;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+a[href*="calendly"] {
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
     box-shadow: 0 4px 6px rgba(20, 184, 166, 0.25);
+    border: none;
+    position: relative;
+    overflow: hidden;
 }
 
-.cta-button:hover {
-    background-color: #0D9488;
-    transform: translateY(-2px);
+a[href*="calendly"]:hover {
+    background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
     box-shadow: 0 6px 12px rgba(20, 184, 166, 0.3);
 }
 
-.secondary-button {
-    background: transparent;
-    color: white;
-    border: 2px solid #14B8A6;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+a[href*="calendly"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
 }
 
-.secondary-button:hover {
-    background-color: #14B8A6;
-    transform: translateY(-2px);
+a[href*="calendly"]:hover::before {
+    left: 100%;
+}
+
+a[href*="program-details"] {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+a[href*="program-details"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);
+    z-index: -1;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+a[href*="program-details"]:hover::before {
+    opacity: 1;
 }
 
 /* Card styles */
@@ -120,4 +146,15 @@ body {
 .backdrop-blur {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+}
+
+/* Button animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
 }
