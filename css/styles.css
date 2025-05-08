@@ -90,7 +90,7 @@ body {
 }
 
 .hero-gradient {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #164e63 100%);
 }
 
 .text-shadow {
@@ -99,5 +99,31 @@ body {
 
 .hero-card {
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced button styles */
+.btn-primary {
+    background: linear-gradient(135deg, #2AB7B1 0%, #239690 100%);
+    box-shadow: 0 4px 15px rgba(42, 183, 177, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(42, 183, 177, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #2AB7B1;
+    color: #2AB7B1;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #2AB7B1;
+    color: white;
+    transform: translateY(-2px);
 }
