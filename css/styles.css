@@ -71,3 +71,33 @@ body {
     font-weight: bold;
     transform: rotate(10deg);
 }
+
+/* New Hero Section Styles */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+}
