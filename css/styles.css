@@ -1,0 +1,73 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.teal-bg {
+    background-color: #2AB7B1;
+}
+
+.teal-text {
+    color: #2AB7B1;
+}
+
+.dark-bg {
+    background-color: #1A1A1A;
+}
+
+.cta-button {
+    background-color: #2AB7B1;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #239690;
+    transform: scale(1.03);
+}
+
+.secondary-button {
+    border: 2px solid #2AB7B1;
+    color: #2AB7B1;
+    transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: #2AB7B1;
+    color: white;
+    transform: scale(1.03);
+}
+
+.feature-box {
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial {
+    border-left: 4px solid #2AB7B1;
+}
+
+.highlight-box {
+    background-color: rgba(42, 183, 177, 0.1);
+    border-left: 4px solid #2AB7B1;
+}
+
+.countdown-box {
+    border: 2px solid #2AB7B1;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    transform: rotate(10deg);
+}
