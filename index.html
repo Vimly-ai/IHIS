@@ -3,98 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Become a Board-Certified Health Coach in just 12 weeks with our NBHWC-accredited program. Transform your passion for wellness into a thriving career.">
-    <meta name="keywords" content="health coach certification, NBHWC accredited, wellness coach, health coaching program">
-    <meta name="author" content="Institute of Holistic Integrative Studies">
-    <meta property="og:title" content="Become a Board-Certified Health Coach in Just 12 Weeks | IHIS">
-    <meta property="og:description" content="Transform your passion for wellness into a thriving career with our NBHWC-accredited program.">
-    <meta property="og:image" content="https://page1.genspark.site/v1/base64_upload/7a27ca23b453b424ab07d115ad3a8904">
-    <meta property="og:url" content="https://www.ihistudies.com">
-    <title>Become a Board-Certified Health Coach in Just 12 Weeks | IHIS</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <title>IHIS - Health Coach Certification Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        teal: {
+                            400: '#14B8A6',
+                            500: '#0D9488',
+                            600: '#0F766E'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-white">
     <!-- Hero Section -->
-    <header class="relative overflow-hidden bg-slate-900 text-white">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 opacity-100"></div>
-        
-        <div class="container mx-auto px-4 py-16 relative">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2 mb-10 md:mb-0 z-10">
-                    <div class="relative bg-slate-900/50 p-8 rounded-lg backdrop-blur-sm">
-                        <img src="https://page1.genspark.site/v1/base64_upload/7a27ca23b453b424ab07d115ad3a8904" 
-                             alt="Institute of Holistic Integrative Studies Logo" 
-                             class="mb-8 mx-auto md:mx-0 w-48">
-                        
-                        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+    <header class="relative min-h-screen bg-slate-900">
+        <!-- Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900"></div>
+
+        <!-- Content Container -->
+        <div class="relative container mx-auto px-4 py-12 min-h-screen flex items-center">
+            <div class="grid md:grid-cols-2 gap-12 items-center w-full">
+                <!-- Left Column -->
+                <div class="text-white space-y-8">
+                    <img src="https://page1.genspark.site/v1/base64_upload/7a27ca23b453b424ab07d115ad3a8904" 
+                         alt="Institute of Holistic Integrative Studies Logo" 
+                         class="w-48">
+
+                    <div class="space-y-6">
+                        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
                             Transform Your Passion into 
                             <span class="relative inline-block">
                                 <span class="relative z-10 text-teal-400">Purpose</span>
                                 <div class="absolute bottom-0 left-0 w-full h-3 bg-teal-500 opacity-30"></div>
                             </span>
                         </h1>
-                        
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-teal-400">
+
+                        <h2 class="text-2xl md:text-4xl font-bold text-teal-400">
                             Become a Board-Certified Health Coach in Just 12 Weeks
                         </h2>
-                        
-                        <p class="text-lg md:text-xl mb-8 text-white font-medium">
+
+                        <p class="text-xl text-gray-200">
                             Join our NBHWC-accredited program and start your journey to becoming 
                             a certified health coach. Transform lives, including your own.
                         </p>
-                        
+
                         <div class="flex flex-col sm:flex-row gap-4">
                             <a href="https://calendly.com/jillbucaro/15-minute-chat" 
-                               class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-4 px-8 rounded-lg text-center text-lg flex items-center justify-center group transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-lg">
+                               class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-teal-500 rounded-lg hover:bg-teal-400 transition-all duration-300 transform hover:scale-105 shadow-lg group">
                                 <span>Book a Free Call with Jill</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                 </svg>
                             </a>
                             <a href="#program-details" 
-                               class="bg-white/10 backdrop-blur-sm hover:bg-teal-500 text-white border-2 border-teal-400 py-4 px-8 rounded-lg text-center text-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:border-transparent shadow-lg">
+                               class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-teal-400 rounded-lg hover:bg-teal-500 hover:border-transparent transition-all duration-300 transform hover:scale-105">
                                 Discover the Program
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="md:w-1/2 flex justify-center z-10">
-                    <div class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-md transform hover:scale-105 transition-transform duration-300">
+
+                <!-- Right Column -->
+                <div class="relative">
+                    <div class="bg-white rounded-xl shadow-2xl p-8">
+                        <!-- Limited Time Badge -->
                         <div class="absolute -top-4 -right-4 bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold transform rotate-12 shadow-lg">
                             Limited Time
                         </div>
-                        
-                        <img src="https://page1.genspark.site/v1/base64_upload/10667e9532b7a6b20f4a3d164ff6f9ca" 
-                             alt="NBHWC Approved Program Badge" 
-                             class="mx-auto mb-6 w-48">
-                        
+
+                        <!-- NBHWC Badge -->
+                        <div class="mb-8">
+                            <img src="https://page1.genspark.site/v1/base64_upload/10667e9532b7a6b20f4a3d164ff6f9ca" 
+                                 alt="NBHWC Approved Program Badge" 
+                                 class="mx-auto w-48">
+                        </div>
+
                         <!-- Stats Grid -->
-                        <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="grid grid-cols-2 gap-6 mb-8">
                             <div class="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg shadow-md">
-                                <div class="text-4xl font-bold text-teal-700 mb-1">12</div>
-                                <div class="text-gray-800 text-sm font-semibold">Weeks to Certify</div>
+                                <div class="text-4xl font-bold text-teal-600 mb-2">12</div>
+                                <div class="text-gray-700 font-medium">Weeks to Certify</div>
                             </div>
                             <div class="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg shadow-md">
-                                <div class="text-4xl font-bold text-teal-700 mb-1">9</div>
-                                <div class="text-gray-800 text-sm font-semibold">Spots Left</div>
+                                <div class="text-4xl font-bold text-teal-600 mb-2">9</div>
+                                <div class="text-gray-700 font-medium">Spots Left</div>
                             </div>
                         </div>
-                        
-                        <!-- Next Cohort -->
+
+                        <!-- Next Cohort Box -->
                         <div class="text-center p-6 bg-gradient-to-r from-teal-600 to-teal-700 rounded-lg shadow-lg">
                             <p class="text-white font-bold text-xl mb-2">Next Cohort Starting Soon</p>
-                            <p class="text-teal-100 font-medium text-lg">Reserve your spot today!</p>
+                            <p class="text-teal-100 font-medium">Reserve your spot today!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <script>
+        // Ensure styles are applied
+        document.addEventListener('DOMContentLoaded', function() {
+            // Force a repaint
+            document.body.style.display = 'none';
+            document.body.offsetHeight;
+            document.body.style.display = '';
+            
+            // Add animation classes
+            document.querySelectorAll('.stats-card').forEach(card => {
+                card.classList.add('animate-float');
+            });
+        });
+    </script>
 
     <!-- Why Choose IHIS Section -->
     <section class="py-16 bg-gray-50">
